@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ad.size" content="width=980, height=240">
+
+
+<script type="text/javascript">
+      var clickTag1 = "https://www.lexus.se/car-models/ux/#hero";
+      var clickTag2 = "https://www.lexus.se/car-models/nx/#hero";
+      var clickTag3 = "https://www.lexus.se/car-models/rx/#hero";
+      var clickTag4 = "https://www.lexus.se/car-models/rx-l/#hero";
+</script>
+
+<!--remove CDN links if not required-->
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.19.1_3e055071719ea45b6807509f844b72d9_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.19.1_73f878f2eefbdccb4dd209b874ad9cc4_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.1_92cf05aba6ca4ea5cbc62b5a7cb924e3_min.js"></script>
+
+<title>LEXUS | HYBRID</title>
+
+<style type="text/css">
+html, body {
+	margin:0;
+	padding:0;
+}
+
+#ad{
+	cursor:pointer;
+	overflow:hidden;
+}
+
+.size{
+	width:980px;
+	height:240px;
+	top:0px;
+	left:0px;
+}
+
+#border{
+	width:978px;
+	height:238px;
+	top:0px;
+	left:0px;
+  border: 1px solid #000;
+}
+
+.pos{
+	position:absolute;
+	transition-property: opacity, transform;
+}
+
+#background{
+	background: url("images/background.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+	opacity:1;
+}
+
+#legal{
+	background: url("images/legal-text.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+	opacity:1;
+}
+
+#logo{
+	background: url("images/logo.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+	opacity:1;
+}
+
+#copy1{
+	background: url("images/copy1.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+	opacity:1;
+  display: block;
+}
+
+#copy2{
+	background: url("images/copy2.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+	opacity:0;
+  display: none;
+}
+
+#copy3{
+	background: url("images/copy3.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+	opacity:0;
+  display: none;
+}
+
+#copy4{
+	background: url("images/copy4.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+	opacity:0;
+  display: none;
+}
+
+</style>
+
+<script type="text/javascript">
+
+var dcm = true; //True for DCM false for DCS
+
+function init(){
+	console.log("init");
+
+  var tl = new TimelineMax({repeat:3})
+    tl.to("#copy1",0.5,{opacity:1, display:'block'})
+      .to("#copy1",0.5,{opacity:0, delay:2, display:'none'})
+      .to("#copy2",0.5,{opacity:1, display:'block'})
+      .to("#copy2",0.5,{opacity:0, delay:2, display:'none'})
+      .to("#copy3",0.5,{opacity:1, display:'block'})
+      .to("#copy3",0.5,{opacity:0, delay:2, display:'none'})
+      .to("#copy4",0.5,{opacity:1, display:'block'})
+      .to("#copy4",0.5,{opacity:0, delay:2, display:'none'})
+
+      console.log(tl.duration());
+
+
+}
+
+</script>
+
+</head>
+
+<body>
+  <div id="ad" class="size pos">
+    <div id="background" class="size pos"></div>
+    <div id="logo" class="size pos"></div>
+    <div id="legal" class="size pos"></div>
+    <div id="border" class="size pos"></div>
+    <div id="copy1" class="size pos" onclick="javascript:window.open(window.clickTag1)"></div>
+    <div id="copy2" class="size pos" onclick="javascript:window.open(window.clickTag2)"></div>
+    <div id="copy3" class="size pos" onclick="javascript:window.open(window.clickTag3)"></div>
+    <div id="copy4" class="size pos" onclick="javascript:window.open(window.clickTag4)"></div>
+  </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+var element = document.querySelector('meta[name="ad.size"]');
+var content = element && element.getAttribute("content");
+var ad = document.getElementById("ad")
+console.log("ad meta data is",content," w ",ad.offsetWidth);
+init();
+</script>
